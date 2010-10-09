@@ -33,8 +33,7 @@ module LipsumAPI
     send_request(opts)
   end
   
-  def send_request(opts) 
-    p "Old perform"
+  def send_request(opts)     
     begin
       RestClient.post LIPSUM_URL, opts
     rescue
