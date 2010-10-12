@@ -16,7 +16,7 @@ module LipsumAPI
       parse_response(plain_doc) do |element|
           results << element.inner_text
       end      
-      results = results.first if opts[:what] == 'words'
+      results = results.first.rstrip.lstrip if opts[:what] == 'words'
       results
     end
   end
