@@ -1,9 +1,0 @@
-A Lipsum.com interface written in Ruby
-=====================================
-
-gem install lipsum-api
-
-require 'lipsum'
-# LipsumAPI#lipsum_words LipsumAPI#lipsum_paragraphs LipsumAPI#lipsum_bytes LipsumAPI#lipsum_lists
-puts 6.lipsum_words
-puts 2.lipsum_paragraphs :start_with_lorem => true

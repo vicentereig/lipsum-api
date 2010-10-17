@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name          = 'lipsum-api'
-  s.homepage      = 'http://github.com/vitxo/lipsum-api'
+  s.homepage      = 'http://github.com/vicentereig/lipsum-api'
   s.platform      = Gem::Platform::RUBY
   s.version       = '0.2'
   s.summary       = 'Another Lipsum generator written in Ruby'
