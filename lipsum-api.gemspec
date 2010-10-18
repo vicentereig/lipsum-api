@@ -23,7 +23,7 @@ Gem::Specification.new do |s|
     test/lipsum_test.rb
     Gemfile
     LICENSE
-    README
+    README.markdown
     Rakefile
   ]
 end
