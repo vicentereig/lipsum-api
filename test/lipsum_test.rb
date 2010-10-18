@@ -21,4 +21,12 @@ class LipsumTest < Test::Unit::TestCase
     bytes = 3736.lipsum_bytes
     assert_equal bytes.size, 5
   end
+
+  def test_not_lipsums
+    begin
+      10.lipsum_shits
+    rescue
+      assert true
+    end
+  end
 end

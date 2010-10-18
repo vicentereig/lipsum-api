@@ -2,7 +2,7 @@ Gem::Specification.new do |s|
   s.name          = 'lipsum-api'
   s.homepage      = 'http://github.com/vicentereig/lipsum-api'
   s.platform      = Gem::Platform::RUBY
-  s.version       = '0.2'
+  s.version       = '0.3'
   s.summary       = 'Another Lipsum generator written in Ruby'
   s.require_paths = %w[lib]
   s.author        = "Vicente Reig Rincón de Arellano"
