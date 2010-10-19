@@ -1,0 +1,20 @@
+#!/usr/bin/env ruby
+# 
+# Usage:  $ lipsum words 5
+#         $ lipsum paragraphs 5
+#         $ lipsum lists 10
+#         $ lipsum bytes 120
+#         $ lipsum w|p|l|b number
+#
+
+def print_usage
+  STDERR.puts "Usage: "
+  STDERR.puts "lipsum what amount"
+  STDERR.puts " Where 'what' can be 'words', 'paragraphs', 'lists', or 'bits'"
+  STDERR.puts " or in their abbreviated form: 'w', 'p', 'l', and 'b'."
+  exit(1)
+end
+
+
+print_usage if ARGV.size < 3
+
