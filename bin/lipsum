@@ -1,20 +1,34 @@
 #!/usr/bin/env ruby
-# 
+#
 # Usage:  $ lipsum words 5
 #         $ lipsum paragraphs 5
 #         $ lipsum lists 10
 #         $ lipsum bytes 120
 #         $ lipsum w|p|l|b number
 #
+require 'rubygems'
+require 'lipsum'
 
 def print_usage
   STDERR.puts "Usage: "
   STDERR.puts "lipsum what amount"
-  STDERR.puts " Where 'what' can be 'words', 'paragraphs', 'lists', or 'bits'"
-  STDERR.puts " or in their abbreviated form: 'w', 'p', 'l', and 'b'."
+  STDERR.puts " Where 'what' can be 'words', 'paragraphs', 'lists', or 'bytes'"
+  STDOUT.puts " 'amount' is the number of words, paragraphs, lists or bytes to retrieve"
+  puts ARGV.inspect
   exit(1)
 end
 
 
-print_usage if ARGV.size < 3
+print_usage if ARGV.size < 2
 
+                
+command = ARGV[0]
+amount = ARGV[1].to_i
+start_with_lorem = ARGV.include?('--start-with-lorem') || ARGV.include?('-s')
+
+if  !['words', 'paragraphs', 'lists', 'bytes'].include?(command)
+  print_usage
+end
+
+opts = start_with_lorem ? {:start_with_lorem => true} : {}
+STDOUT.puts amount.send("lipsum_#{command}", opts)
