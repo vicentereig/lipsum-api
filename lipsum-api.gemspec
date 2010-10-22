@@ -11,12 +11,13 @@ Gem::Specification.new do |s|
   s.bindir             = 'bin'
   s.executables        = ['lipsum']
   s.default_executable = 'lipsum'
-  
+
+  s.add_runtime_dependency("thor")
   s.add_runtime_dependency("nokogiri")
   s.add_runtime_dependency("rest-client")
   s.add_development_dependency("rake")
   s.add_development_dependency("bundler")
-  
+
   s.files = %w[
     bin/lipsum
     lib/lipsum.rb

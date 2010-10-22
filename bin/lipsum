@@ -21,7 +21,7 @@ end
 
 print_usage if ARGV.size < 2
 
-                
+
 command = ARGV[0]
 amount = ARGV[1].to_i
 start_with_lorem = ARGV.include?('--start-with-lorem') || ARGV.include?('-s')
