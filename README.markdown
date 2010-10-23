@@ -29,10 +29,10 @@ Retrieve one paragraphs of Lipsum
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed tellus ac lectus congue sodales. Fusce egestas nunc id neque porta sagittis. Mauris consectetur dui quis nibh adipiscing quis tempor elit dictum. Duis lorem erat, rutrum quis sodales consectetur, viverra nec purus. Sed massa erat, convallis tempus aliquet sit amet, porta id nisl. Maecenas nunc ligula, sollicitudin sed posuere id, rhoncus a erat. Praesent commodo tincidunt tellus vitae cursus. Vivamus laoreet, turpis ornare pharetra eleifend, sapien magna posuere lectus, ut iaculis metus eros consectetur felis. Etiam ornare, odio in tincidunt pretium, enim ligula interdum est, vitae sollicitudin mi mi eu quam. Mauris ullamcorper congue molestie. Praesent non lacus aliquet risus vulputate ornare eu id magna. Nulla placerat tempor nibh ac eleifend. Vivamus dignissim suscipit fringilla. Etiam nec urna id nunc aliquet vehicula in et nulla. Cras cursus nisi eget elit pharetra facilisis. In in turpis est. Donec porta dolor vitae nulla interdum ut tempus tortor placerat. Integer convallis feugiat condimentum.
 
 You can also use from your Ruby code. When requiring the gem, it will add the following methods to any Fixnum:
-* LipsumAPI#lipsum_paragraphs
-* LipsumAPI#lipsum_words
-* LipsumAPI#lipsum_bytes
-* LipsumAPI#lipsum_lists
+ * LipsumAPI#lipsum_paragraphs
+ * LipsumAPI#lipsum_words
+ * LipsumAPI#lipsum_bytes
+ * LipsumAPI#lipsum_lists
 
 
 Example:
