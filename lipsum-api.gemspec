@@ -2,8 +2,9 @@ Gem::Specification.new do |s|
   s.name               = 'lipsum-api'
   s.homepage           = 'http://github.com/vicentereig/lipsum-api'
   s.platform           = Gem::Platform::RUBY
-  s.version            = '0.4'
-  s.summary            = 'Another Lipsum generator written in Ruby'
+  s.version            = '0.5'
+  s.summary            = 'A Ruby interface to Lipsum.com'
+  s.description        = 'A library and command line client to interface Lipsum.com'
   s.require_paths      = %w[lib]
   s.author             = "Vicente Reig Rincón de Arellano"
   s.email              = "vicente.reig@gmail.com"
@@ -21,6 +22,7 @@ Gem::Specification.new do |s|
   s.files = %w[
     bin/lipsum
     lib/lipsum.rb
+    lib/lipsum_app.rb
     test/fixtures/lipsum_bytes.html
     test/fixtures/lipsum_words.html
     test/fixtures/lipsum_lists.html
