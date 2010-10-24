@@ -31,7 +31,7 @@ Retrieve one paragraph of Lipsum:
 *TIP:*
 Use these bash aliases in addition to the lipsum cli to copy&paste from the command line:
 
-    # somewhere in you ~/.bash_aliases
+    # somewhere in your ~/.bash_aliases
     alias pbcopy='xclip -selection clipboard'
     alias pbpaste='xclip -selection clipboard -o'
 
