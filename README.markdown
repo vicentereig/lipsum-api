@@ -20,7 +20,7 @@ Use it from the command line to retrieve Lipsum placeholder text
       lipsum paragraphs AMOUNT  # Downloads an AMOUNT of paragraphs from Lipsum.com
       lipsum words AMOUNT       # Downloads an AMOUNT of words from Lipsum.com
 
-Retrieve one paragraphs of Lipsum
+Retrieve one paragraph of Lipsum:
 
     $ lipsum paragraphs 1
     Nullam venenatis luctus tortor ac commodo. Suspendisse potenti. Aenean congue, tortor sed porttitor imperdiet, tellus dui iaculis nulla, aliquam cursus nisl eros sed risus. Nunc non magna felis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris congue eleifend nisl vitae blandit. Sed bibendum tempor condimentum. Sed ultricies consequat tincidunt. Quisque lorem sem, ornare at mattis sit amet, congue nec felis. Morbi sit amet purus sapien. Sed non magna justo, sed volutpat quam. Integer nec ante quis neque pellentesque sollicitudin et vel augue. Aenean vitae leo vitae purus vestibulum sodales id vitae ligula. Ut eget lacus a dui volutpat aliquet. Nulla facilisi. Fusce varius odio nec ipsum pulvinar ac pretium dolor bibendum. Morbi eget sem in dui fringilla aliquam ut in ligula. Vivamus in libero mauris, eget condimentum dui.
@@ -28,11 +28,21 @@ Retrieve one paragraphs of Lipsum
     $ lipsum paragraphs 1 --start-with-lorem
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed tellus ac lectus congue sodales. Fusce egestas nunc id neque porta sagittis. Mauris consectetur dui quis nibh adipiscing quis tempor elit dictum. Duis lorem erat, rutrum quis sodales consectetur, viverra nec purus. Sed massa erat, convallis tempus aliquet sit amet, porta id nisl. Maecenas nunc ligula, sollicitudin sed posuere id, rhoncus a erat. Praesent commodo tincidunt tellus vitae cursus. Vivamus laoreet, turpis ornare pharetra eleifend, sapien magna posuere lectus, ut iaculis metus eros consectetur felis. Etiam ornare, odio in tincidunt pretium, enim ligula interdum est, vitae sollicitudin mi mi eu quam. Mauris ullamcorper congue molestie. Praesent non lacus aliquet risus vulputate ornare eu id magna. Nulla placerat tempor nibh ac eleifend. Vivamus dignissim suscipit fringilla. Etiam nec urna id nunc aliquet vehicula in et nulla. Cras cursus nisi eget elit pharetra facilisis. In in turpis est. Donec porta dolor vitae nulla interdum ut tempus tortor placerat. Integer convallis feugiat condimentum.
 
-You can also use from your Ruby code. When requiring the gem, it will add the following methods to any Fixnum:
- * LipsumAPI#lipsum_paragraphs
- * LipsumAPI#lipsum_words
- * LipsumAPI#lipsum_bytes
- * LipsumAPI#lipsum_lists
+*TIP:*
+Use these bash aliases in addition to the lipsum cli to copy&paste from the command line:
+
+    # somewhere in you ~/.bash_aliases
+    alias pbcopy='xclip -selection clipboard'
+    alias pbpaste='xclip -selection clipboard -o'
+
+    $ lipsum paragraphs 4 | pbcopy
+
+You can also use it from your Ruby code. When requiring the gem, it will add the following methods to any Fixnum:
+
+ * LipsumAPI#lipsum_paragraphs: which returns an <code>Array</code> of <code>String</code>s
+ * LipsumAPI#lipsum_words: which returns just a <code>String</code>
+ * LipsumAPI#lipsum_bytes: idem.
+ * LipsumAPI#lipsum_lists: same as paragraphs.
 
 
 Example:
